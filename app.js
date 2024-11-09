@@ -150,7 +150,7 @@ game.cathcPokemon = (pokemonObj) => {
   game.party.push(pokemonObj);
 
   game.items.forEach(item => {
-  if(item.name === "pokeball")
+  if(item.name === "pokeball" && item.quantity > 0)
   item.quantity = item.quantity - 1 ;
 })
 }
